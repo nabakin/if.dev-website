@@ -1,0 +1,86 @@
+:root {
+	--header-height-px: 55px;
+	--footer-height-px: 45.7px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+
+    box-sizing: border-box;
+}
+
+html {
+	height: 100%;
+	width: 100%;
+
+	font-family: 'Open Sans', sans-serif;
+    font-size: 10pt;
+    font-weight: normal;
+
+    text-rendering: optimizeLegibility;
+    color: white;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    border-bottom: 1px dotted;
+}
+
+a:hover {
+    border-bottom: 1px solid;
+}
+
+#main {
+	height: calc(100% - var(--footer-height-px));
+	width: 100%;
+	position: absolute;
+	overflow-y: scroll;
+}
+
+#content {
+	height: inherit;
+}
+
+.header {
+    font-weight: lighter;
+    font-size: 14pt;
+}
+
+.bottom {
+	width: 100%;
+    position: fixed;
+    bottom: 0;
+}
+
+.box {
+	padding: 10px;
+}
+
+#content .box {
+	min-height: 33.333%;
+}
+
+.red {
+    background: hsl(0, 68%, 50%);
+}
+
+.blue {
+    background: hsl(220, 68%, 50%);
+}
+
+.green {
+    background: hsl(104, 49%, 44%);
+}
+
+.yellow {
+    background: hsl(45, 99%, 48%);
+}
+
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+  /*[class*="col-"] {
+    width: 100%;
+  }*/
+}
