@@ -9,6 +9,12 @@
 		<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Open+Sans:400,700,300,600" />
 		<link rel="stylesheet" type="text/css" href="res/main.css" />
 		<link rel="stylesheet" type="text/css" href="res/print.css" media="print" />
+		<script>
+			function addLoremIpsum(el) {
+				var hookEl = document.getElementById("hook");
+                hookEl.innerHTML = hookEl.innerHTML + "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam commodo tellus ut magna congue, eu eleifend arcu bibendum. Nulla facilisi. Cras ornare sem libero, eget consectetur libero tincidunt in. Praesent molestie sit amet sapien ac placerat. Pellentesque lacinia justo fermentum orci convallis condimentum. Cras nec malesuada nisl. Praesent in suscipit enim. Mauris sed dolor dignissim, placerat dolor convallis, suscipit nibh. Donec nec interdum sapien. Mauris a consectetur dui. Curabitur lobortis mi at justo sollicitudin lacinia. Cras euismod in lacus vitae gravida. Nam auctor, ligula auctor euismod tempor, urna elit placerat sapien, ornare porta enim dui eu sapien.";
+            }
+        </script>
 	</head>
 
 	<body>
@@ -17,8 +23,10 @@
 				if (dev) {
 			</div></a>
 			<div id="content">
-				<div class="hook box blue">
+				<div id="hook" class="hook box blue">
 					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce a lectus id massa congue pulvinar.
+
+					<button type="button" onclick=addLoremIpsum(this)>Add Lorem Ipsum</button>
 				</div>
 				<div class="examples box green">
 					horizontally scrolling list of card example sites
