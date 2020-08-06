@@ -108,11 +108,17 @@ a:hover {
 	margin: auto; /* Make it push flex items to the center */
 }
 
-.horizontal-scroll-wrapper > div {
+.horizontal-scroll-wrapper > a {
 	margin: 10px;
 
 	flex: 0 0 auto;
 	background-color: black;
+
+	border-bottom: none;
+}
+
+.horizontal-scroll-wrapper > a:hover {
+	border-bottom: none;
 }
 
 /* Website Cards */
